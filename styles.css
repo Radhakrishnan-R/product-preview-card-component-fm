@@ -1,0 +1,132 @@
+body{
+    background-color:hsl(30, 38%, 92%);
+    font-family: "Montserrat", sans-serif;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+h1,h2,p{
+    margin: 0px;
+}
+
+.container{
+    width: 500px;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-sizing: content-box;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.image-holder{
+    width: 250px;
+}
+
+.image-holder > img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.content-holder{
+    width: 250px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+h2{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 10px;
+    letter-spacing: 6px;
+    color: hsl(228, 12%, 48%);
+}
+
+h1{
+    font-family: "Fraunces", serif;
+    line-height: 32px;
+    color: hsl(212, 21%, 14%);
+}
+
+p{
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    line-height: 20px;
+}
+
+.price{
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces", serif;
+    font-size: 2rem;
+    font-weight: 600;
+    display: flex;
+    gap: 15px;
+    margin: 16px 0px;
+}
+
+.price > span{
+    color:hsl(228, 12%, 48%);
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    text-decoration: line-through;
+    font-weight: 400;
+}
+
+button{
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    border: none;
+    padding: 13px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    transition: background-color 0.15s;
+}
+
+
+button > img{
+    width: 12px;
+
+}
+
+
+button:hover{
+    background-color:  hsl(159, 41%, 16%);
+    cursor: pointer;
+}
+
+@media (max-width:450px) {
+    body{
+        height: auto;
+    }
+    .container{
+        width: auto;
+        display: block;
+        margin: 25px;
+    }
+    .image-holder {
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+        
+    }
+    .image-holder > img{
+        object-fit: cover;
+        object-position: top;
+        height: 100%;
+    }
+    .content-holder{
+        gap: 15px;
+        width: auto;
+    }
+}
